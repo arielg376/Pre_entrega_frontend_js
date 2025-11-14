@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto 📫</title>
+    <title>Carrito 🛒</title>
 </head>
 <body>
     <header class="header">
@@ -16,7 +15,7 @@
         </p>
         <nav class="header__nav">
             <ul>
-                <li> <a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 
                 <li><a href="contacto.html">Contactos</a>
                 </li>
@@ -26,29 +25,16 @@
             </ul>
         </nav>
     </header>
-
     <main>
-         <section class="seccion-contacto">
-            <h1 class="titulo-contacto">Contacto</h1>
-           <form id="form-contacto" class="form"
-      action="https://formspree.io/f/xovnyavd"
-      method="POST">
-  <div class="campo-contacto">
-    <label>Correo:
-      <input type="email" name="email" required>
-    </label>
-  </div>
-  <div class="campo-contacto">
-    <label>Dejá tu mensaje:
-      <textarea name="message" required></textarea>
-    </label>
-  </div>
-  <button type="submit">Enviar</button>
-</form>
-        </section>
+        <h1 class="titulo_home">Carrito de compras</h1>
+        
+        <section id="contenedor-carrito"></section>
 
+        <div class="acciones-carrito" id="acciones-carrito"></div>
+
+        <section id="resumen-carrito"></section>
+       
     </main>
-
     <footer class="footer">
         <p class="footer-text">© 2025 Ace of Beer —De Dock Sud para el mundo</p>
         <nav class="footer-nav">
@@ -62,5 +48,8 @@
         </nav>
 
     </footer>
+    <script type="module" src ="../js/carrito.js"></script>
+
+    
 </body>
 </html>

@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>🤟Ace of Beer🍻</title>
 </head>
 <body>
     <header class="header">
         <p class="header__logo">
-            <a href="index.html"><img src="./img/logo mh.png" alt=""></a>
+            <a href="index.html"><img src="./img/logo mh.png" alt="logo"></a>
         </p>
         <nav class="header__nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 
                 <li><a href="./pages/contacto.html">Contactos</a>
+                </li>
+                <li><a href="./pages/carrito.html" class="carrito-icono">
+                    🛒<spam id="contador-carrito">0</spam></a>
                 </li>
             </ul>
         </nav>
@@ -33,35 +36,10 @@
         <p class="parrafo_home"><strong>Nacimos en el corazón de Dock Sud</strong>, entre calles que vibran con historia y espíritu obrero. Desde ahí, llevamos nuestra cerveza al mundo, con la filosofía de Motörhead como bandera: vivir sin pedir permiso, tocar fuerte, ser fiel a uno mismo.
         Porque creemos que la cerveza, como el rock, no se explica. Se siente. Se comparte. Se celebra.
         </p>
-        <div class="contenedor-tarjetas">
         <section class="productos_home">
             <h2>Conoce nuestras cervezas</h2>
-            <div class="contenedor_tarjetas">
-                <article class="tarjetas_productos">
-                    <h3>Ace of Beer Ipa 330ml</h3>
-                    <img src="./img/ipa.jpeg" alt="ipa">
-                    <p>IPA artesanal hecha con el espíritu Motörhead. Intensa, honesta y sin concesiones.</p>
-                    <div class="precio">Precio $ 1350</div>
-                   <button type="button">Ver ficha tecnica</button>
-
-                </article>
-                <article class="tarjetas_productos">
-                    <h3>Ace of Beer Stout 330ml</h3>
-                    <img src="./img/stout 1.png" alt="stout">
-                    <p>Stout artesanal con notas de café y cacao. Oscura, intensa y con alma de riff lento.</p>
-                    <div class="precio">Precio $ 1350</div>
-                    <button type="button">Ver ficha tecnica</button>
-
-                </article>
-                <article class="tarjetas_productos">
-                    <h3>Ace of Beer Red Ale 330ml</h3>
-                    <img src="./img/red.png" alt="">
-                    <p>Red Ale artesanal con notas de malta tostada y caramelo. Color fuego, alma de distorsión.</p>
-                    <div class="precio">Precio $ 1500</div>
-                   <button type="button">Ver ficha tecnica</button>
-                    
-                </article>
-
+        <div id="contenedor-tarjetas" class="contenedor-tarjetas">
+        
             </div>
 
         </section>
@@ -81,7 +59,7 @@
         </nav>
 
     </footer>
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 
     
 </body>

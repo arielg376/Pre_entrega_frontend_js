@@ -117,6 +117,42 @@ body{
 .footer-nav a:hover{
     color: #ffcc00;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   BOTONES                                  */
+/* -------------------------------------------------------------------------- */
+ .btn {
+    background-color: #b22222;
+  color: #f5f5dc;
+  padding: 15px;
+  font-size: 2rem;
+  font-family: 'almendra', cursive;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffcc00;
+  color: #dd0404;
+}
+
+.btn-eliminar-carrito {
+    background-color: #ffcc00;
+    border: 2px solid #dd0404;
+}
+
+.btn-vaciar-carrito {
+background-color: #ffcc00;
+color: #dd0404;
+}
+
+.btn-vaciar-carrito:hover {
+    background-color: #ffcc00;
+}
+
+
 /* -------------------------------------------------------------------------- */
 /*                                    HOME                                    */
 /* -------------------------------------------------------------------------- */
@@ -167,7 +203,7 @@ font-family: 'BLACEB__', 'NewRocker-Regular';
     padding: 1rem;
     margin: 2rem;
 }
-.contenedor_tarjetas{
+.contenedor-tarjetas{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -273,3 +309,77 @@ button:hover {
   background-color: #ffcc00;
   color: #dd0404;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   CARRITO                                  */
+/* -------------------------------------------------------------------------- */
+.mensaje-carrito-vacio {
+    font-family: 'BLACEB__', 'NewRocker-Regular';
+    font-size: 4.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.contenedor-carrito-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.acciones-carrito {
+    margin-top: 2rem;
+}
+
+
+/* Botones específicos del carrito */
+.btn-eliminar-carrito {
+    background-color: #ffcc00 !important;
+    color: #dd0404 !important;
+    border: 2px solid #dd0404 !important;
+}
+
+.btn-eliminar-carrito:hover {
+    background-color: #dd0404 !important;
+    color: #ffcc00 !important;
+    border: 2px solid #ffcc00 !important;
+}
+
+.btn-vaciar-carrito {
+    background-color: #ffcc00 !important;
+    color: #dd0404 !important;
+    border: 2px solid #dd0404 !important;
+    font-size: 2.5rem;
+    padding: 1.5rem 3rem;
+    margin-top: 1rem;
+}
+
+.btn-vaciar-carrito:hover {
+    background-color: #dd0404 !important;
+    color: #ffcc00 !important;
+    border: 2px solid #ffcc00 !important;
+}
+
+.total-carrito {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    border: 2px solid #ffcc00;
+}
+
+.total-carrito h3 {
+    font-family: 'BLACEB__', 'NewRocker-Regular';
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+    margin: 0;
+}
+
+
